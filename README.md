@@ -18,5 +18,6 @@
 |Purchase date|span.user-post__published > time:nth-child(2)["datetime"]|purchase_date||
 |Usefulness count|span[id^="votes-yes"]|usefulness||
 |Uselessness count|span[id^="votes-no"]|uselessness||
+
 3. Extraction of single opinion components
 4. Transormation of extrated data to given data types
