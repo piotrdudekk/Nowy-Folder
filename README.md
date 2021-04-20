@@ -5,19 +5,23 @@
 
 |Component|CSS Selector|Variable name|Data type|
 |---------|------------|-------------|---------|
-|Opinion|div.user-post_card|opinion||
-|Opinion id|["data-entry-id"]|opinion_id||
-|Author|span.user-post__author-name|author||
-|Recommendation|span.user-post__author-recomendation > em|recommendation||
-|Stars rating|span.user-post__score-count|stars||
-|Content|div.user-post__text|content||
-|Advantages|div.review-feature__col:has(> div[class$="positives"]) > div.review-feature__item|pros||
-|Disadvantages|div.review-feature__col:has(> div[class$="negatives"]) > div.review-feature__item|cons||
-|Verification|div.rewiev-pz|verified||
-|Post date|span.user-post__published > time:nth-child(1)["datetime"]|post_date||
-|Purchase date|span.user-post__published > time:nth-child(2)["datetime"]|purchase_date||
-|Usefulness count|span[id^="votes-yes"]|usefulness||
-|Uselessness count|span[id^="votes-no"]|uselessness||
+|Opinion|div.js_product-review|dict|
+|Opinion id|["data-entry-id"]|opinion_id|str|
+|Author|span.user-post__author-name|author|str|
+|Recommendation|span.user-post__author-recomendation > em|recommendation|bool|
+|Stars rating|span.user-post__score-count|stars|float|
+|Content|div.user-post__text|content|str|
+|Advantages|div.review-feature__col:has(> div[class$="positives"]) > div.review-feature__item|pros|list(str)|
+|Disadvantages|div.review-feature__col:has(> div[class$="negatives"]) > div.review-feature__item|cons|list(str)|
+|Verification|div.rewiev-pz|verified|bool|
+|Post date|span.user-post__published > time:nth-child(1)["datetime"]|post_date|str|
+|Purchase date|span.user-post__published > time:nth-child(2)["datetime"]|purchase_date|str|
+|Usefulness count|span[id^="votes-yes"]|usefulness|int|
+|Uselessness count|span[id^="votes-no"]|uselessness|int|
 
 3. Extraction of single opinion components
 4. Transormation of extrated data to given data types
+
+## Stage 2 - extraction of all opinions for single page
+
+## Stage 3 - extraction of all opinions for single product
